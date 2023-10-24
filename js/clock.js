@@ -122,7 +122,7 @@ $(".area-de-trabalho").click(function () {
 
 //CLICOU NO SEGREDO
 $("#segredo").dblclick(function () {
-  window.open("https://curso.programacaoweb.com.br/black/");
+  window.open("https://youtu.be/zsBIuaBO0Qo?si=iMjWVEPfkCutzuLS");
 });
 
 //CLICOU COM BOTÃO DIREITO NA AREA DE TRABALHO
@@ -208,8 +208,8 @@ $("button[aria-label=Maximize]").click(function () {
   } else {
     $(".janela").animate(
       {
-        height: "400px",
-        width: "600px",
+        height: "200px",
+        width: "300px",
         top: "25%",
         left: "27%"
       },
@@ -249,8 +249,8 @@ $(".prog").click(function () {
     if ($(".janela").attr("data-status") == "restaurado") {
       $(".janela").animate(
         {
-          height: "400px",
-          width: "600px",
+          height: "200px",
+          width: "300px",
           top: "25%",
           left: "27%"
         },

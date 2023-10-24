@@ -35,8 +35,8 @@ body {
 
 .desktop-icon {
   position: relative;
-  width: 120px;
-  height: 140px;
+  width: 80px; /* Tamanho menor dos ícones */
+  height: 100px; /* Tamanho menor dos ícones */
   padding: 15px;
   text-align: center;
 /*     background: white; */
@@ -51,7 +51,7 @@ body {
   white-space: normal;
   color: white;
 /*   font-family: "VT323", monospace; */
-  font-size: 15px;
+  font-size: 10px;
   text-shadow: 2px 2px 8px black;
   cursor: context-menu;
 }
@@ -62,7 +62,6 @@ body {
 
 .desktop-icon img {
   max-width: 70%;
-  box-shadow: 5px 10px 18px black:
 }
 
 .hover{
@@ -74,7 +73,7 @@ body {
   justify-content: space-between;
   position: absolute;
   width: 100vw;
-  height: 50px;
+  height: 30px;
   bottom: 0;
   left: 0;
   background: linear-gradient(
@@ -90,10 +89,11 @@ body {
 }
 
 #iniciar {
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
+  width: 80px;
   border: none;
   background: linear-gradient(
     to bottom,
@@ -107,7 +107,7 @@ body {
   border-bottom-right-radius: 15px;
   cursor: pointer;
   color: white;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   font-weight: bold;
   text-shadow: 2px 2px 8px #003d00;
   margin-right:15px;
@@ -146,7 +146,7 @@ body {
   display: none;
   justify-content:center;
   align-items:center;
-  width: 150px;
+  width: 100px;
 /*   max-width:200px; */
  background: linear-gradient(
       to bottom,
@@ -166,12 +166,12 @@ body {
 }
 
 .prog img{
-  width:25px;
+  width:10px;
   margin-right:10px;
 }
 
 .prog.active{
- width: 150px;
+ width: 100px;
    background: linear-gradient(
       to bottom,
       var(--azul) 0%,      
@@ -202,8 +202,8 @@ body {
 }
 
 .icon {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   cursor: pointer;
 }
 
@@ -227,7 +227,7 @@ body {
   margin-right: 15px;
   color: white;
 /*   font-family: "VT323", monospace; */
-  font-size: 18px;
+  font-size: 10px;
   font-weight: bold;
   cursor: context-menu;
 }
@@ -235,11 +235,11 @@ body {
 #botaoDireito{
   display:none;
   position: absolute;
-  width:200px;
+  width: 100px;
   background: #F5F5F5;
   border:1px solid gray;
 /*   font-family: "VT323", monospace; */
-  font-size: 18px;
+  font-size: 10px;
   z-index:995;
 }
 
@@ -252,7 +252,7 @@ body {
   color: black;
   text-decoration: none;
 /*   background: white; */
-  height: 40px; 
+  height: 20px; 
 }
 
 .item-menu:hover{
@@ -269,7 +269,7 @@ body {
   color: black;
   text-decoration: none;
 /*   background: white; */
-  height: 40px; 
+  height: 20px; 
 }
 
 .sub-menu:hover{
@@ -299,14 +299,14 @@ body {
 .menuExtra{
   display:none;
   position: absolute;
-  width:200px;
-  height: 85px;
+  width:100px;
+  height: 45px;
   bottom: -40px;
   right:-200px; 
   background: #F5F5F5;
   border:1px solid gray;
 /*   font-family: "VT323", monospace; */
-  font-size: 18px;
+  font-size: 10px;
 }
 
 .extraItem-menu{
@@ -318,7 +318,7 @@ body {
   color: black;
   text-decoration: none;
 /*   background: white; */
-  height: 40px; 
+  height: 20px; 
 }
 
 .extraItem-menu:hover{
@@ -330,24 +330,24 @@ body {
   display:none;
   flex-flow: row wrap;
   position: fixed;
-  bottom:50px;
+  bottom:30px;
   background:white;
-  width: 500px;
-  height:600px;
+  width: 250px;
+  height:300px;
   z-index:999;
   border-top-right-radius:10px;
   border-right:3px solid var(--azul);
 }
 
 #menuIniciar.active{
- display:flex; 
+ display:block; 
 }
 
 .topoIniciar{
   display:flex;
   align-items: center;
   width:100%;
-  height:100px;
+  height: 50px;
   background: linear-gradient(
       to bottom,
       var(--azul) 0%,
@@ -364,8 +364,8 @@ body {
   background: white;
   background-image: url('https://i.redd.it/tb3mnb7dzcd51.jpg');
   background-size: cover;
-  width: 70px;
-  height: 70px;
+  width: 45px;
+  height: 45px;
   border-radius: 10px;
   margin-left:15px;
 }
@@ -382,7 +382,7 @@ body {
   position: absolute;
   bottom:0;
   width:100%;
-  height:60px;
+  height:40px;
   background: linear-gradient(
       to bottom,
       var(--azul) 0%,
@@ -409,8 +409,8 @@ body {
 
 .mioloIniciar{
   display:flex;
-  width:100%;
-  height: 500px; 
+  width:250px;
+  height: 100px; 
   margin-top: 0;
   padding-top: 0;  
 }
@@ -426,10 +426,9 @@ body {
 .itemIniciar{  
   display: flex;  
   align-items: center;
-  width: 100%;
-  height: 60px;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
+  font-size: 10px;
 }
 
 .itemIniciar:hover{
@@ -466,7 +465,7 @@ body {
   display: flex;
   align-items: center; 
   justify-content: flex-end;
-  width: 252px;
+  width: 125px;
   height: 60px;
 /*   background: red; */
   position: absolute;
@@ -498,8 +497,8 @@ body {
   display: none;
   flex-flow: row wrap;
   position: absolute;
-  width: 600px;
-  height: 400px;
+  width: 300px;
+  height: 200px;
   left:27%;
   top:25%;
   background: white;  
@@ -515,7 +514,7 @@ body {
   align-items: center;
   justify-content: space-between;  
   width:100%;
-  height:40px;
+  height:25px;
   background: linear-gradient(
       to bottom,
       var(--azul) 0%,
@@ -628,7 +627,6 @@ iframe{
 .icon-lixo img {
   min-width: 50px;
   max-width: 50px;
-  box-shadow: 5px 10px 18px black;
 }
 
 .icon-lixo span {
@@ -646,8 +644,8 @@ iframe{
 .error {
   display: none;
   position: absolute;
-  width: 494px;
-  height: 142px;
+  width: 220px;
+  height: 150px;
 /*   padding: 2px; */
   border: 3px solid var(--azul);
   border-top-left-radius:5px;
@@ -683,8 +681,8 @@ iframe{
 }
 .ok {
   position: absolute;
-  width: 100px;
-  height: 27px;
+  width: 60px;
+  height: 20px;
   background-color: #e8e8d8;
   border: 1px solid #2b2b2b;
   box-shadow: inset -1px -1px 2px rgba(0,0,0,0.7);
@@ -736,3 +734,34 @@ iframe{
     opacity: 1;
   }
 }
+
+/* Defina as cores e outras variáveis CSS aqui */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+}
+
+#windowsXP {
+  display: flex;
+  width: 500px; /* Largura fixa de 500px */
+  height: 360px; /* Altura fixa de 360px */
+  flex-direction: column;
+}
+
+.area-de-trabalho {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  background: url("https://images2.alphacoders.com/941/941898.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+img{
+  height: 30px;
+  width: 30px;
+}
+
